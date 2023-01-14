@@ -1,0 +1,126 @@
+body
+{
+    font-family: sans-serif;
+    margin: 4em;
+    max-width: 80em;
+    line-height: 1.5;
+    font-size: 16pt;
+    color: #222;
+    background-color: antiquewhite;
+}
+header
+{
+    line-height: 1.2;
+}
+header > h1
+{
+    margin: 0;
+    font-size: 200%;
+}
+header > aside
+{
+    font-style: italic;
+    font-size: 14pt;
+    display: inline;
+}
+header > a
+{
+    float: right;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: rgb(0, 123, 20);
+    text-decoration: none;
+    border: 2px solid rgb(0, 123, 20);
+    border-radius: 1em;
+}
+header > a:visited
+{
+    color: rgb(0, 123, 20);
+}
+header > a:hover
+{
+    background: rgb(0, 123, 20);
+    color: antiquewhite;
+    font-style:italic;
+}
+header > a:active
+{
+    background: rgb(0, 89, 20);
+    color: antiquewhite;
+}
+label
+{
+    float: left;
+}
+span
+{
+    display: block;
+    overflow: hidden;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+span > input
+{
+    font-size: 16pt;
+    width: 100%;
+}
+a.recipe
+{
+    color: #222;
+}
+a.recipe:visited
+{
+    color: #222;
+}
+h2
+{
+    font-size: 120%;
+}
+#list
+{
+    list-style: none;
+    padding-left: 0;
+}
+table
+{
+    width: 100%;
+}
+.table-button
+{
+    width: 100%;
+}
+.method-button
+{
+    width: 49%;
+    padding: 0;
+}
+td > input
+{
+    font-size: 16pt;
+    width: 98%;
+}
+li > input
+{
+    font-size: 16pt;
+    width: 98%;
+}
+table, th, td
+{
+    border: 1pt solid #222;
+    border-collapse: collapse;
+}
+#scale
+{
+    float: right;
+    font-size: 16pt;
+}
+#scaleqty
+{
+    font-size: 16pt;
+    min-width: 3em;
+    width: fit-content;
+}
+#qty
+{
+    display: inline;
+}

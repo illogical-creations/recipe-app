@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipes</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="{{ url_for('static', filename = 'editor.js') }}"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Recipes</h1>
+            <a href="{{ url_for('root') }}">Back To Search</a>
+            <aside>Add a New Recipe</aside>
+        </header>
+        <hr>
+        <div id="recipe">
+            <div id="info-container">
+                <h2>Information</h2>
+                <label for="name">Name: </label>
+                <span>
+                    <input
+                        class="name"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Recipe Name"
+                    />
+                </span>
+                <label for="qty">Makes Quantity: </label>
+                <span>
+                    <input
+                        class="qty"
+                        type="number"
+                        name="qty"
+                        id="qty"
+                        placeholder="1"
+                    />
+                </span>
+            </div>
+            <div id="ingredients-container">
+                <h2>Ingredients</h2>
+                
+                <table id="ingredients">
+                    <tr id="ingredient-header">
+                        <th>Ingredient</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr><td><input></td><td><input></td></tr>
+                    <tr id="ingredient-buttons" class="buttons">
+                        <td><button id="add-ingredient" class="table-button">+</button></td>
+                        <td><button id="del-ingredient" class="table-button">-</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="steps-container">
+                <h2>Method</h2>
+                <ol id="method-list">
+                    <li>
+                        <input></input>
+                    </li>
+                </ol>
+                <!--<table>
+                    <tr id="method-buttons" class="buttons">-->
+                        <button id="add-method" class="method-button">+</button>
+                        <button id="del-method" class="method-button">-</button>
+                <!--    </tr>
+                </table>-->
+            </div>
+            <hr>
+            <button id="submit" class="table-button">Add Recipe to List</button>
+        </div>
+    </body>
+</html>

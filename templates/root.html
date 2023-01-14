@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recipes</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="{{ url_for('static', filename = 'search.js') }}"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Recipes</h1>
+            <a href="{{ url_for('add_recipe') }}">Add Recipe</a>
+            <aside>View, Add and Edit Recipes</aside>
+            
+        </header>
+        <hr>
+        <div id="search-container">
+            <label for="searchtext">Search: </label>
+            <span>
+                <input
+                    class="search"
+                    type="text"
+                    name="searctext"
+                    id="searchtext"
+                    placeholder="Type a Recipe Name Here"
+                />
+            </span>
+        </div>
+        <hr>
+        <div id="list-container">
+            <ul id="list">
+                {% for recipe in recipe_list %}
+                <li>
+                    <a class="recipe" href="{{ url_for('show_recipe', name=recipe) }}">{{ recipe }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>
