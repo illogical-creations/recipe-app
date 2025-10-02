@@ -21,7 +21,7 @@ An example setup of the development server on a linux computer, such as a raspbe
 
 Clone the repository to your computer:
 ```
-git clone https://github.com/eleanorkaterosewood/recipe-app.git
+git clone https://github.com/illogical-creations/recipe-app.git
 ```
 Change working directory to the cloned repository:
 ```
